@@ -1,5 +1,6 @@
 def square_array(array)
   array.each do |x|
-    puts x ** 2
+    value = array.index(x)
+    square_array[value] = x ** 2
   end
 end
